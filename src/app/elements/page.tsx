@@ -3,9 +3,9 @@ import React from "react";
 import Navbar1 from "../components/Navbar1";
 import Footer2 from "../components/Footer2";
 
-import peopleWorking1 from "../assets/peopleWorking2/img_1.svg";
-import peopleWorking2 from "../assets/peopleWorking2/img_2.svg";
-import peopleWorking3 from "../assets/peopleWorking2/img_3.svg";
+import peopleWorking1 from "../assets/peopleWorking2/img_1.webp";
+import peopleWorking2 from "../assets/peopleWorking2/img_2.webp";
+import peopleWorking3 from "../assets/peopleWorking2/img_3.webp";
 
 import Person1 from "../assets/Avatar/001_img_person_1.svg";
 import Person2 from "../assets/Avatar/002_img_person_2.svg";
@@ -13,8 +13,8 @@ import Person3 from "../assets/Avatar/003_img_person_3.svg";
 
 import LearnMoreButton from "../assets/LearnMoreButton.svg";
 
-import PeopleMeeting from "../assets/PeopleMeeting.svg";
-import PeopleMeeting2 from "../assets/PeopleMeeting2.svg";
+import PeopleMeeting from "../assets/PeopleMeeting.webp";
+import PeopleMeeting2 from "../assets/PeopleMeeting2.webp";
 
 import ClientLogo1 from "../assets/ClientLogo/logo_1.svg";
 import ClientLogo2 from "../assets/ClientLogo/logo_2.svg";
@@ -53,7 +53,7 @@ function Elements() {
           </div>
         </div>
       </div>
-      <img className="mt-12" src={PeopleMeeting.src} />
+      <img className="mt-12" src={PeopleMeeting.src} alt="Banner1" />
       <div>
         <div className="flex py-20 px-16 max-w-5xl mx-auto gap-6">
           <h1 className="text-4xl font-bold">
@@ -75,7 +75,7 @@ function Elements() {
         </div>
       </div>
       <div className="grid grid-cols-2 w-full bg-gray-100">
-        <img src={PeopleMeeting2.src} alt="Banner" />
+        <img src={PeopleMeeting2.src} alt="Banner2" />
         <div className="pl-10 max-w-lg flex items-center justify-center">
           <div className="flex flex-col gap-4 mt-6">
             <div>
@@ -419,7 +419,7 @@ function Elements() {
         <div className="grid grid-cols-3 gap-8 max-w-5xl mx-auto mt-8">
           <div className="rounded-md">
             <div className="flex flex-col h-full">
-              <img src={peopleWorking3.src} />
+              <img src={peopleWorking3.src} alt="Card3" />
               <p className="py-3 font-light">22 June 2022</p>
               <h2 className="text-2xl font-bold">
                 ISO 13485 compliance of medical devices
@@ -437,7 +437,7 @@ function Elements() {
           </div>
           <div className="rounded-md">
             <div className="flex flex-col h-full">
-              <img src={peopleWorking2.src} />
+              <img src={peopleWorking2.src} alt="Card2" />
               <p className="py-3 font-light">22 June 2022</p>
               <h2 className="text-2xl font-bold">
                 Business analysis helps you in finance
@@ -455,7 +455,7 @@ function Elements() {
           </div>
           <div className="rounded-md">
             <div>
-              <img src={peopleWorking1.src} />
+              <img src={peopleWorking1.src} alt="Card1" />
               <p className="py-3 font-light">22 June 2022</p>
               <h2 className="text-2xl font-bold">
                 5 web portal examples your business can learn from

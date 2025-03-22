@@ -2,9 +2,9 @@ import React from "react";
 import Navbar1 from "./components/Navbar1";
 import Footer1 from "./components/Footer1";
 
-import Img1 from "./assets/ImgMain1.svg";
-import Img2 from "./assets/ImgMain2.svg";
-import Img3 from "./assets/ImgMain3.svg";
+import Img1 from "./assets/ImgMain1.webp";
+import Img2 from "./assets/ImgMain2.webp";
+import Img3 from "./assets/ImgMain3.webp";
 
 import ClientLogo1 from "./assets/ClientLogo/logo_1.svg";
 import ClientLogo2 from "./assets/ClientLogo/logo_2.svg";
@@ -48,7 +48,11 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <img src={Img1.src} className="w-full max-w-sm md:max-w-md" />
+          <img
+            src={Img1.src}
+            className="w-full max-w-sm md:max-w-md"
+            alt="Main1"
+          />
         </div>
         <div className="flex justify-center items-center border-t-1 border-gray-500/10 gap-4">
           <img src={ClientLogo1.src} width={150} />
@@ -126,10 +130,10 @@ export default function Home() {
               Learn more
             </button>
           </div>
-          <img src={Img2.src} width={500} />
+          <img src={Img2.src} width={500} alt="Main2" />
         </div>
         <div className="flex flex-col-reverse md:flex-row justify-center items-center max-w-6xl mx-auto gap-20 px-16 mt-16">
-          <img src={Img3.src} width={500} />
+          <img src={Img3.src} width={500} alt="Main3" />
           <div className="flex flex-col mx-auto gap-8">
             <h1 className="text-4xl font-bold max-w-2xl">
               Radically new data solutions
@@ -224,7 +228,11 @@ export default function Home() {
         </div>
         <div className="grid grid-cols-2 gap-8 mx-auto w-full max-w-5xl">
           <div className="p-8 shadow-md rounded-md">
-            <img src={Person1.src} className="rounded-full absolute -mt-16" />
+            <img
+              src={Person1.src}
+              className="rounded-full absolute -mt-16"
+              alt="Avatar"
+            />
             <p className="text-gray-400 mt-8">
               “Ut enim ad minima veniam, quis nostrum exercitationem ullam
               corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
@@ -237,7 +245,11 @@ export default function Home() {
             </div>
           </div>
           <div className="p-8 shadow-md rounded-md">
-            <img src={Person2.src} className="rounded-full absolute -mt-16" />
+            <img
+              src={Person2.src}
+              className="rounded-full absolute -mt-16"
+              alt="Avatar"
+            />
             <p className="text-gray-400 mt-8">
               “Ut enim ad minima veniam, quis nostrum exercitationem ullam
               corporis suscipit laboriosam, nisi ut aliquid ex ea commodi

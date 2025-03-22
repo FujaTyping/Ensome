@@ -6,14 +6,14 @@ import Footer2 from "../components/Footer2";
 import Person1 from "../assets/Avatar/001_img_person_1.svg";
 import Person2 from "../assets/Avatar/002_img_person_2.svg";
 
-import PeopleGroup1 from "../assets/PeopleGroup1.svg";
-import PeopleGroup2 from "../assets/PeopleGroup2.svg";
+import PeopleGroup1 from "../assets/PeopleGroup1.webp";
+import PeopleGroup2 from "../assets/PeopleGroup2.webp";
 
-import Banner1 from "@/app/assets/Banner1.svg";
+import Banner1 from "@/app/assets/Banner1.webp";
 
-import peopleWorking1 from "../assets/peopleWorking/img_1.svg";
-import peopleWorking2 from "../assets/peopleWorking/img_2.svg";
-import peopleWorking3 from "../assets/peopleWorking/img_3.svg";
+import peopleWorking1 from "../assets/peopleWorking/img_1.webp";
+import peopleWorking2 from "../assets/peopleWorking/img_2.webp";
+import peopleWorking3 from "../assets/peopleWorking/img_3.webp";
 
 import ClientLogo1 from "../assets/ClientLogo/logo_1.svg";
 import ClientLogo2 from "../assets/ClientLogo/logo_2.svg";
@@ -76,10 +76,10 @@ function Solutions() {
               Learn more
             </button>
           </div>
-          <img src={PeopleGroup1.src} width={500} />
+          <img src={PeopleGroup1.src} width={500} alt="Card1" />
         </div>
         <div className="flex flex-col-reverse md:flex-row justify-center items-center max-w-6xl mx-auto gap-20 px-16 mt-16">
-          <img src={PeopleGroup2.src} width={500} />
+          <img src={PeopleGroup2.src} width={500} alt="Card2" />
           <div className="flex flex-col mx-auto gap-8">
             <div>
               <h1 className="text-4xl font-bold max-w-2xl mb-4">
@@ -197,7 +197,7 @@ function Solutions() {
           <div className="grid grid-cols-2 gap-8 mx-auto w-full max-w-5xl">
             <div className="p-8 shadow-md bg-white  rounded-md">
               <div className="flex items-center">
-                <img src={Person1.src} className="rounded-full" />
+                <img src={Person1.src} className="rounded-full" alt="Avatar" />
                 <div className="mt-1 ml-10">
                   <h1 className="font-bold">Alex Bern</h1>
                   <h2 className="text-gray-400">CEO by PixelPerfect</h2>
@@ -213,7 +213,7 @@ function Solutions() {
             </div>
             <div className="p-8 shadow-md bg-white rounded-md">
               <div className="flex items-center">
-                <img src={Person2.src} className="rounded-full" />
+                <img src={Person2.src} className="rounded-full" alt="Avatar" />
                 <div className="mt-1 ml-10">
                   <h1 className="font-bold">Alex Bern</h1>
                   <h2 className="text-gray-400">CEO by NOX</h2>
@@ -338,7 +338,7 @@ function Solutions() {
         <div className="grid grid-cols-3 gap-8 max-w-5xl mx-auto mt-8">
           <div className="rounded-md">
             <div className="flex flex-col h-full">
-              <img src={peopleWorking1.src} />
+              <img src={peopleWorking1.src} alt="Card1" />
               <p className="py-3 font-light">22 June 2022</p>
               <h2 className="text-2xl font-bold">
                 Staffing software: key capabilities and top products
@@ -351,7 +351,7 @@ function Solutions() {
           </div>
           <div className="rounded-md">
             <div className="flex flex-col h-full">
-              <img src={peopleWorking2.src} />
+              <img src={peopleWorking2.src} alt="Card2" />
               <p className="py-3 font-light">22 June 2022</p>
               <h2 className="text-2xl font-bold">
                 2022 software development trends explained with benefits
@@ -364,7 +364,7 @@ function Solutions() {
           </div>
           <div className="rounded-md">
             <div>
-              <img src={peopleWorking3.src} />
+              <img src={peopleWorking3.src} alt="Card3" />
               <p className="py-3 font-light">22 June 2022</p>
               <h2 className="text-2xl font-bold">
                 Business analysis helps you in finance
