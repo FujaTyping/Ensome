@@ -15,7 +15,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 function Footer1() {
   return (
     <>
-      <div className="w-full p-10 py-20 bg-blue-600 text-white flex gap-14 items-center justify-center">
+      <div className="w-full p-10 py-20 bg-blue-600 text-white flex flex-col md:flex-row gap-14 items-center justify-center">
         <div className="flex flex-col gap-4">
           <h1 className="text-4xl font-bold">Subscribe to our newsletter</h1>
           <p className="max-w-xl">
@@ -35,9 +35,9 @@ function Footer1() {
         </div>
       </div>
       <div>
-        <div className="flex items-start w-full place-content-between py-12 px-32">
+        <div className="flex flex-col md:flex-row items-start w-full place-content-between py-12 px-32">
           <img src={EnsomeLogo.src} alt="Logo" />
-          <div className="flex gap-24">
+          <div className="flex flex-col mt-6 md:mt-0 md:flex-row gap-24">
             <div className="flex flex-col">
               <h1 className="font-bold text-xl mb-3">About</h1>
               <div className="flex flex-col gap-2 ">
@@ -69,10 +69,10 @@ function Footer1() {
           </div>
         </div>
         <div className="w-5/6 mx-auto bg-gray-200 h-0.5"></div>
-        <div className="flex items-start w-full place-content-between py-12 px-32">
+        <div className="flex flex-col md:flex-row items-start w-full place-content-between py-12 px-32">
           <div>
             <h1 className="font-bold text-xl mb-3">Contact</h1>
-            <div className="flex gap-8">
+            <div className="flex flex-col md:flex-row gap-8">
               <div>
                 <h2>+1 601-201-5580</h2>
                 <a
@@ -91,7 +91,7 @@ function Footer1() {
             </div>
           </div>
           <div>
-            <h2 className="font-bold text-xl mb-3">Social</h2>
+            <h2 className="font-bold text-xl mb-3 mt-6 md:mt-0">Social</h2>
             <div className="flex gap-4">
               <a href="#" className="bg-blue-600 p-2 rounded-full">
                 <FaFacebookF size={12} className="text-white" />
@@ -115,7 +115,7 @@ function Footer1() {
           </div>
         </div>
         <div className="w-5/6 mx-auto bg-gray-200 h-0.5"></div>
-        <div className="flex items-start w-full place-content-between py-12 px-32">
+        <div className="flex flex-col md:flex-row items-start w-full place-content-between py-12 px-32">
           <div className="flex gap-5 text-gray-400">
             <a href="#" className="flex items-center gap-2 font-bold">
               Privacy policy <FaArrowRightLong className="text-gray-400" />
@@ -125,7 +125,9 @@ function Footer1() {
             </a>
           </div>
           <div>
-            <p className="text-gray-400">© 2022 Ensome. All Rights Reserved.</p>
+            <p className="text-gray-400 mt-6 md:mt-0">
+              © 2022 Ensome. All Rights Reserved.
+            </p>
           </div>
         </div>
       </div>

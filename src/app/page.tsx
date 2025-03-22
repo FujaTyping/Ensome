@@ -54,18 +54,18 @@ export default function Home() {
             alt="Main1"
           />
         </div>
-        <div className="flex justify-center items-center border-t-1 border-gray-500/10 gap-4">
-          <img src={ClientLogo1.src} width={150} />
-          <img src={ClientLogo2.src} width={150} />
-          <img src={ClientLogo3.src} width={150} />
-          <img src={ClientLogo4.src} width={150} />
-          <img src={ClientLogo5.src} width={150} />
-          <img src={ClientLogo6.src} width={150} />
+        <div className="flex flex-col md:flex-row justify-center items-center border-t-1 border-gray-500/10 gap-4">
+          <img src={ClientLogo1.src} width={150} alt="Client1 Logo" />
+          <img src={ClientLogo2.src} width={150} alt="Client2 Logo" />
+          <img src={ClientLogo3.src} width={150} alt="Client3 Logo" />
+          <img src={ClientLogo4.src} width={150} alt="Client4 Logo" />
+          <img src={ClientLogo5.src} width={150} alt="Client5 Logo" />
+          <img src={ClientLogo6.src} width={150} alt="Client6 Logo" />
         </div>
       </section>
       <section>
         <div className="flex flex-col justify-center items-center py-24 bg-[#F1F6FA]">
-          <div>
+          <div className="p-5 md:p-5">
             <h1 className="text-4xl font-bold max-w-2xl">
               Why our clients chosse Ensome?
             </h1>
@@ -75,7 +75,7 @@ export default function Home() {
               explicabo.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl p-5 md:p-0">
             <div className="bg-white p-8 rounded-md">
               <LuBrainCircuit size={42} className="text-blue-600" />
               <div>
@@ -152,7 +152,7 @@ export default function Home() {
       </section>
       <div className="flex flex-col gap-12 items-center justify-center bg-blue-100 p-10 py-18 ">
         <h1 className="text-4xl font-bold">Glad to help your success</h1>
-        <div className="grid grid-cols-3 gap-4 max-w-5xl">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-5xl">
           <div className="bg-white p-8 rounded-md">
             <h2 className="text-gray-400 mb-4">22 June 2020</h2>
             <h1 className="text-xl font-bold mb-4">
@@ -217,16 +217,22 @@ export default function Home() {
           <h1 className="text-4xl font-bold max-w-lg">
             Trusted by the best in the business
           </h1>
-          <div className="flex gap-4">
-            <button className="p-5 w-20 bg-blue-100 rounded-full flex items-center justify-center">
+          <div className="hidden md:flex gap-4">
+            <button
+              aria-label="left"
+              className="p-5 w-20 bg-blue-100 rounded-full flex items-center justify-center"
+            >
               <FaArrowLeftLong className="text-gray-400" />
             </button>
-            <button className="p-5 w-20 bg-blue-100 rounded-full flex items-center justify-center cursor-pointer">
+            <button
+              aria-label="right"
+              className="p-5 w-20 bg-blue-100 rounded-full flex items-center justify-center cursor-pointer"
+            >
               <FaArrowRightLong />
             </button>
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-8 mx-auto w-full max-w-5xl">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-14 md:gap-8 mx-auto w-full max-w-5xl">
           <div className="p-8 shadow-md rounded-md">
             <img
               src={Person1.src}
@@ -263,28 +269,28 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="bg-blue-600 p-10 py-18 text-white flex items-center justify-center gap-16">
+      <div className="bg-blue-600 p-10 py-18 text-white flex flex-col md:flex-row items-center justify-center gap-16">
         <div className="flex flex-col items-center justify-center gap-4">
           <h1 className="text-5xl font-bold">1830+</h1>
           <p className="font-bold">Project executed</p>
         </div>
-        <div className="w-[1px] h-20 bg-blue-300"></div>
+        <div className="w-[1px] h-20 bg-blue-300 md:block hidden"></div>
         <div className="flex flex-col items-center justify-center gap-4">
           <h1 className="text-5xl font-bold">220</h1>
           <p className="font-bold">Data analytics</p>
         </div>
-        <div className="w-[1px] h-20 bg-blue-300"></div>
+        <div className="w-[1px] h-20 bg-blue-300 md:block hidden"></div>
         <div className="flex flex-col items-center justify-center gap-4">
           <h1 className="text-5xl font-bold">390</h1>
           <p className="font-bold">Data management</p>
         </div>
-        <div className="w-[1px] h-20 bg-blue-300"></div>
+        <div className="w-[1px] h-20 bg-blue-300 md:block hidden"></div>
         <div className="flex flex-col items-center justify-center gap-4">
           <h1 className="text-5xl font-bold">834+</h1>
           <p className="font-bold">Satisfied customers</p>
         </div>
       </div>
-      <div className="flex items-center justify-center px-20 py-24 gap-14 bg-gray-100">
+      <div className="flex flex-col md:flex-row items-center justify-center px-20 py-24 gap-14 bg-gray-100">
         <div>
           <div>
             <h1 className="text-4xl font-bold max-w-xl">

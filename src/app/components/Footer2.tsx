@@ -13,7 +13,7 @@ import {
 function Footer2() {
   return (
     <>
-      <div className="w-full p-10 py-20 bg-[#002B4E] border-b-2 border-gray-500/20 text-white flex gap-14 items-center justify-center">
+      <div className="w-full p-10 py-20 bg-[#002B4E] border-b-2 border-gray-500/20 text-white flex flex-col md:flex-row gap-14 items-center justify-center">
         <div className="flex flex-col gap-4">
           <h1 className="text-4xl font-bold">Subscribe to our newsletter</h1>
           <p className="max-w-xl">
@@ -33,7 +33,7 @@ function Footer2() {
         </div>
       </div>
       <div>
-        <div className="flex items-start w-full bg-[#002B4E] place-content-between py-12 px-32">
+        <div className="flex flex-col md:flex-row items-start w-full bg-[#002B4E] place-content-between py-12 px-32">
           <div className="flex flex-col gap-4">
             <img src={EnsomeLogo.src} className="w-32" alt="Logo" />
             <p className="text-gray-400 max-w-lg">
@@ -61,7 +61,7 @@ function Footer2() {
               </a>
             </div>
           </div>
-          <div className="flex gap-24 text-white">
+          <div className="flex flex-col md:flex-row mt-12 md:mt-0 gap-24 text-white">
             <div className="flex flex-col">
               <h1 className="text-xl mb-3">Quick link</h1>
               <div className="flex flex-col gap-2 text-gray-400">
@@ -97,11 +97,11 @@ function Footer2() {
             </div>
           </div>
         </div>
-        <div className="flex items-start w-full place-content-between py-8 px-32 bg-[#002B4E]">
+        <div className="flex items-start w-full place-content-between py-8 px-32 bg-[#002B4E] flex-col md:flex-row">
           <div>
             <p className="text-gray-400">© 2022 Ensome. All Rights Reserved.</p>
           </div>
-          <div className="flex gap-5 text-gray-400">
+          <div className="flex gap-5 text-gray-400 mt-6 md:mt-0">
             <a href="#" className="flex items-center gap-2">
               Privacy policy
             </a>

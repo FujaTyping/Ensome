@@ -35,7 +35,7 @@ function Solutions() {
     <>
       <Navbar2 />
       <div className="bg-[#002B4E]">
-        <div className="flex py-12 px-16 max-w-5xl mx-auto gap-6">
+        <div className="flex flex-col md:flex-row py-12 px-16 max-w-5xl mx-auto gap-6">
           <h1 className="text-4xl font-bold text-white">
             Find true power in your data with Ensome
           </h1>
@@ -104,7 +104,7 @@ function Solutions() {
           <h1 className="text-4xl mb-4 font-bold">Ensome in numbers</h1>
           <div className="w-32 h-1 bg-blue-500"></div>
         </div>
-        <div className="grid grid-cols-4 max-w-5xl mx-auto mt-10 w-full">
+        <div className="grid grid-cols-1 md:grid-cols-4 max-w-5xl mx-auto mt-10 w-full">
           <div>
             <p className="font-bold text-gray-400 max-w-[200px]">
               {"Data analytics performed by Ensome's"}
@@ -131,9 +131,9 @@ function Solutions() {
           </div>
         </div>
       </div>
-      <div className="pb-20 grid grid-cols-2 w-full">
-        <img src={Banner1.src} alt="Banner" />
-        <div className="pl-10  max-w-lg">
+      <div className="pb-20 grid gri md:grid-cols-2 w-full">
+        <img src={Banner1.src} className="w-full h-auto" alt="Banner" />
+        <div className="p-6 md:p-0 md:pl-10  max-w-lg">
           <h1 className="text-4xl font-bold mb-4">The benefits of Ensome</h1>
           <div className="w-32 h-1 bg-blue-500"></div>
           <div className="flex flex-col gap-4 mt-6">
@@ -185,16 +185,16 @@ function Solutions() {
               </h1>
               <div className="w-32 h-1 bg-blue-500"></div>
             </div>
-            <div className="flex gap-4">
+            <div className="flex gap-4 hidden md:flex">
               <button className="p-5 w-20 bg-blue-100 rounded-full flex items-center justify-center">
-                <FaArrowLeftLong className="text-gray-400" />
+                <FaArrowLeftLong aria-label="left" className="text-gray-400" />
               </button>
               <button className="p-5 w-20 bg-blue-100 rounded-full flex items-center justify-center">
-                <FaArrowRightLong />
+                <FaArrowRightLong aria-label="right" />
               </button>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-8 mx-auto w-full max-w-5xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mx-auto w-full max-w-5xl">
             <div className="p-8 shadow-md bg-white  rounded-md">
               <div className="flex items-center">
                 <img src={Person1.src} className="rounded-full" alt="Avatar" />
@@ -245,7 +245,7 @@ function Solutions() {
             </button>
           </div>
         </div>
-        <div className="grid grid-cols-3 w-full max-w-5xl mt-10 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 w-full max-w-5xl mt-10 gap-6">
           <div className="px-8 py-12 shadow-md rounded-md">
             <div className="flex flex-col gap-3">
               <h2 className="font-bold text-xl">Starter</h2>
@@ -335,7 +335,7 @@ function Solutions() {
           <h1 className="text-4xl font-bold max-w-2xl mb-4">Ensome blog</h1>
           <div className="w-32 h-1 bg-blue-500"></div>
         </div>
-        <div className="grid grid-cols-3 gap-8 max-w-5xl mx-auto mt-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mt-8">
           <div className="rounded-md">
             <div className="flex flex-col h-full">
               <img src={peopleWorking1.src} alt="Card1" />
@@ -376,17 +376,17 @@ function Solutions() {
             </div>
           </div>
         </div>
-        <div className="flex justify-center items-center gap-4 mt-24">
-          <img src={ClientLogo1.src} width={150} />
-          <img src={ClientLogo2.src} width={150} />
-          <img src={ClientLogo3.src} width={150} />
-          <img src={ClientLogo4.src} width={150} />
-          <img src={ClientLogo5.src} width={150} />
-          <img src={ClientLogo6.src} width={150} />
+        <div className="flex flex-col md:flex-row justify-center items-center gap-4 mt-24">
+          <img src={ClientLogo1.src} width={150} alt="Client1 Logo" />
+          <img src={ClientLogo2.src} width={150} alt="Client2 Logo" />
+          <img src={ClientLogo3.src} width={150} alt="Client3 Logo" />
+          <img src={ClientLogo4.src} width={150} alt="Client4 Logo" />
+          <img src={ClientLogo5.src} width={150} alt="Client5 Logo" />
+          <img src={ClientLogo6.src} width={150} alt="Client6 Logo" />
         </div>
       </div>
       <div className="p-10 py-18 flex flex-col items-center justify-center bg-gray-100">
-        <div className="flex w-full place-content-between items-center max-w-5xl">
+        <div className="flex flex-col md:flex-row w-full place-content-between items-center max-w-5xl">
           <div className="flex flex-col">
             <h1 className="text-4xl font-bold mb-4 max-w-lg">
               Contact information
@@ -411,7 +411,7 @@ function Solutions() {
             </div>
           </div>
           <div className="flex flex-col gap-4">
-            <div className="flex gap-4">
+            <div className="flex flex-col md:flex-row mt-6 md:mt-0 gap-4">
               <div>
                 <p className="text-gray-400 mb-1">Name</p>
                 <input

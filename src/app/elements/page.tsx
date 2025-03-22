@@ -35,7 +35,7 @@ function Elements() {
     <>
       <Navbar1 />
       <div>
-        <div className="flex py-12 px-16 max-w-5xl mx-auto gap-6">
+        <div className="flex flex-col md:flex-row py-12 px-16 max-w-5xl mx-auto gap-6">
           <h1 className="text-4xl font-bold">
             Find true power in your data with
             <span className="text-[#185CFF]">Ensome</span>
@@ -53,9 +53,9 @@ function Elements() {
           </div>
         </div>
       </div>
-      <img className="mt-12" src={PeopleMeeting.src} alt="Banner1" />
+      <img className="mt-12 w-full" src={PeopleMeeting.src} alt="Banner1" />
       <div>
-        <div className="flex py-20 px-16 max-w-5xl mx-auto gap-6">
+        <div className="flex flex-col md:flex-row py-20 px-16 max-w-5xl mx-auto gap-6">
           <h1 className="text-4xl font-bold">
             The <span className="text-[#185CFF]">newest</span> business
             analytics platform
@@ -74,7 +74,7 @@ function Elements() {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-2 w-full bg-gray-100">
+      <div className="grid grid-cols-1 md:grid-cols-2 w-full bg-gray-100">
         <img src={PeopleMeeting2.src} alt="Banner2" />
         <div className="pl-10 max-w-lg flex items-center justify-center">
           <div className="flex flex-col gap-4 mt-6">
@@ -101,8 +101,8 @@ function Elements() {
         <h1 className="text-2xl font-bold">
           We provide services that guarantee your success
         </h1>
-        <div className="flex gap-14 justify-center items-center p-12">
-          <div className="grid grid-cols-3 gap-16">
+        <div className="flex flex-col md:flex-row gap-14 justify-center items-center p-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
             <div className="flex flex-col items-center justify-center gap-1">
               <p className="text-4xl font-bold text-[#185CFF]">1830+</p>
               <p className="text-gray-400 text-sm w-[200px]">
@@ -127,17 +127,17 @@ function Elements() {
             finibus nec.
           </p>
         </div>
-        <div className="flex justify-center items-center gap-4 mt-4">
-          <img src={ClientLogo1.src} width={150} />
-          <img src={ClientLogo2.src} width={150} />
-          <img src={ClientLogo3.src} width={150} />
-          <img src={ClientLogo4.src} width={150} />
-          <img src={ClientLogo5.src} width={150} />
-          <img src={ClientLogo6.src} width={150} />
+        <div className="flex flex-col md:flex-row justify-center items-center gap-4 mt-4">
+          <img src={ClientLogo1.src} width={150} alt="Client1 Logo" />
+          <img src={ClientLogo2.src} width={150} alt="Client2 Logo" />
+          <img src={ClientLogo3.src} width={150} alt="Client3 Logo" />
+          <img src={ClientLogo4.src} width={150} alt="Client4 Logo" />
+          <img src={ClientLogo5.src} width={150} alt="Client5 Logo" />
+          <img src={ClientLogo6.src} width={150} alt="Client6 Logo" />
         </div>
       </div>
       <div className="p-10 pb-14 pt-16 bg-gray-100">
-        <div className="flex items-center justify-center gap-16 max-w-5xl mx-auto">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-16 max-w-5xl mx-auto">
           <div>
             <h1 className="text-4xl font-bold">The benefits of Ensome</h1>
             <p className="text-gray-400 max-w-md mt-6">
@@ -147,7 +147,7 @@ function Elements() {
               dicta sunt explicabo.
             </p>
           </div>
-          <div className="flex flex-row gap-5">
+          <div className="flex flex-col md:flex-row gap-5">
             <div className="flex flex-col gap-4">
               <div className="bg-white p-6 shadow-md rounded-md flex flex-col gap-4">
                 <LuBrainCircuit size={42} className="text-blue-600" />
@@ -192,16 +192,22 @@ function Elements() {
           <div className="flex flex-col">
             <h1 className="text-4xl font-bold mb-4 max-w-lg">Testimonials</h1>
           </div>
-          <div className="flex gap-4">
-            <button className="p-5 w-20 bg-blue-100 rounded-full flex items-center justify-center">
+          <div className="flex gap-4 hidden md:flex">
+            <button
+              aria-label="left"
+              className="p-5 w-20 bg-blue-100 rounded-full flex items-center justify-center"
+            >
               <FaArrowLeftLong className="text-gray-400" />
             </button>
-            <button className="p-5 w-20 bg-blue-100 rounded-full flex items-center justify-center">
+            <button
+              aria-label="right"
+              className="p-5 w-20 bg-blue-100 rounded-full flex items-center justify-center"
+            >
               <FaArrowRightLong />
             </button>
           </div>
         </div>
-        <div className="grid grid-cols-3 gap-8 max-w-5xl mx-auto mt-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mt-8">
           <div className="p-8 shadow-md rounded-md flex flex-col gap-3">
             <div className="flex items-center gap-4">
               <img src={Person1.src} alt="Avatar" />
@@ -255,7 +261,7 @@ function Elements() {
             <h1 className="text-4xl font-bold mb-4 max-w-lg">Our pricing</h1>
           </div>
         </div>
-        <div className="grid grid-cols-4 w-full max-w-6xl mt-10 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-4 w-full max-w-6xl mt-10 gap-6">
           <div className="px-8 py-12 shadow-md rounded-md">
             <div className="flex flex-col gap-3">
               <h2 className="font-bold text-xl">Free trial</h2>
@@ -407,16 +413,22 @@ function Elements() {
           <div className="flex flex-col">
             <h1 className="text-4xl font-bold mb-4 max-w-lg">Our blog</h1>
           </div>
-          <div className="flex gap-4">
-            <button className="p-5 w-20 bg-blue-100 rounded-full flex items-center justify-center">
+          <div className="flex gap-4 hidden md:flex">
+            <button
+              aria-label="left"
+              className="p-5 w-20 bg-blue-100 rounded-full flex items-center justify-center"
+            >
               <FaArrowLeftLong className="text-gray-400" />
             </button>
-            <button className="p-5 w-20 bg-blue-100 rounded-full flex items-center justify-center">
+            <button
+              aria-label="right"
+              className="p-5 w-20 bg-blue-100 rounded-full flex items-center justify-center"
+            >
               <FaArrowRightLong />
             </button>
           </div>
         </div>
-        <div className="grid grid-cols-3 gap-8 max-w-5xl mx-auto mt-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mt-8">
           <div className="rounded-md">
             <div className="flex flex-col h-full">
               <img src={peopleWorking3.src} alt="Card3" />
