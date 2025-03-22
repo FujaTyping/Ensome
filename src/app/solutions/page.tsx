@@ -3,19 +3,11 @@ import React from "react";
 import Navbar2 from "../components/Navbar2";
 import Footer2 from "../components/Footer2";
 
-import PlayIcon from "../assets/icons/Play_Icon.svg";
-
-import ArrowInactive from "../assets/icons/ArrowInActive.svg";
-import ArrowActive from "../assets/icons/ArrowActive.svg";
 import Person1 from "../assets/Avatar/001_img_person_1.svg";
 import Person2 from "../assets/Avatar/002_img_person_2.svg";
 
 import PeopleGroup1 from "../assets/PeopleGroup1.svg";
 import PeopleGroup2 from "../assets/PeopleGroup2.svg";
-
-import icon_brain from "../assets/clientpageicon/01_icon_brain_circuit.svg";
-import icon_arrow from "../assets/clientpageicon/02_icon_arrow_trending_lines.svg";
-import icon_key from "../assets/clientpageicon/03_icon_key.svg";
 
 import Banner1 from "@/app/assets/Banner1.svg";
 
@@ -23,20 +15,20 @@ import peopleWorking1 from "../assets/peopleWorking/img_1.svg";
 import peopleWorking2 from "../assets/peopleWorking/img_2.svg";
 import peopleWorking3 from "../assets/peopleWorking/img_3.svg";
 
-import CheckICon from "@/app/assets/icons/Check.svg";
-
-import PhoneIcon from "@/app/assets/icons/Phone.svg";
-import EmailIcon from "@/app/assets/icons/Mail.svg";
-import PinIcon from "@/app/assets/icons/Pin.svg";
-
-import ArrowIcon from "@/app/assets/icons/Arrow_Icon_Blue.svg";
-
 import ClientLogo1 from "../assets/ClientLogo/logo_1.svg";
 import ClientLogo2 from "../assets/ClientLogo/logo_2.svg";
 import ClientLogo3 from "../assets/ClientLogo/logo_3.svg";
 import ClientLogo4 from "../assets/ClientLogo/logo_4.svg";
 import ClientLogo5 from "../assets/ClientLogo/logo_5.svg";
 import ClientLogo6 from "../assets/ClientLogo/logo_6.svg";
+
+import { FaRegCirclePlay } from "react-icons/fa6";
+import { LuBrainCircuit } from "react-icons/lu";
+import { BsGraphUpArrow } from "react-icons/bs";
+import { FaKey, FaCheck, FaPhoneAlt } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { IoMdPin } from "react-icons/io";
+import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
 
 function Solutions() {
   return (
@@ -58,7 +50,7 @@ function Solutions() {
                 Learn more
               </button>
               <button className="flex text-white gap-2">
-                <img src={PlayIcon.src} />
+                <FaRegCirclePlay className="text-white" size={24} />
                 Watch the demo
               </button>
             </div>
@@ -147,7 +139,7 @@ function Solutions() {
           <div className="flex flex-col gap-4 mt-6">
             <div>
               <div className="flex items-center gap-3">
-                <img className="w-6" src={icon_brain.src} alt="Brain" />
+                <LuBrainCircuit className="text-blue-600" size={20} />
                 <h1 className="font-bold">Machine learning</h1>
               </div>
               <p className="text-gray-400 mt-2 text-sm">
@@ -159,7 +151,7 @@ function Solutions() {
             </div>
             <div>
               <div className="flex items-center gap-3">
-                <img className="w-6" src={icon_arrow.src} alt="Arrow" />
+                <BsGraphUpArrow className="text-blue-600" size={20} />
                 <h1 className="font-bold">Embed analytics</h1>
               </div>
               <p className="text-gray-400 mt-2 text-sm">
@@ -171,7 +163,7 @@ function Solutions() {
             </div>
             <div>
               <div className="flex items-center gap-3">
-                <img className="w-6" src={icon_key.src} alt="Key" />
+                <FaKey className="text-blue-600" size={20} />
                 <h1 className="font-bold">Access control</h1>
               </div>
               <p className="text-gray-400 mt-2 text-sm">
@@ -195,10 +187,10 @@ function Solutions() {
             </div>
             <div className="flex gap-4">
               <button className="p-5 w-20 bg-blue-100 rounded-full flex items-center justify-center">
-                <img src={ArrowInactive.src} alt="Icon" />
+                <FaArrowLeftLong className="text-gray-400" />
               </button>
               <button className="p-5 w-20 bg-blue-100 rounded-full flex items-center justify-center">
-                <img src={ArrowActive.src} alt="Icon" />
+                <FaArrowRightLong />
               </button>
             </div>
           </div>
@@ -264,16 +256,16 @@ function Solutions() {
               Get started
             </button>
             <div className="flex flex-col gap-3">
-              <div className="flex gap-2">
-                <img src={CheckICon.src} />
+              <div className="flex gap-2 items-center">
+                <FaCheck className="text-blue-600" />
                 <p>For small teams – 5 users</p>
               </div>
-              <div className="flex gap-2">
-                <img src={CheckICon.src} />
+              <div className="flex gap-2 items-center">
+                <FaCheck className="text-blue-600" />
                 <p>Community support</p>
               </div>
-              <div className="flex gap-2">
-                <img src={CheckICon.src} />
+              <div className="flex gap-2 items-center">
+                <FaCheck className="text-blue-600" />
                 <p>Individual data – 20GB</p>
               </div>
             </div>
@@ -291,16 +283,16 @@ function Solutions() {
               Get started
             </button>
             <div className="flex flex-col gap-3">
-              <div className="flex gap-2">
-                <img src={CheckICon.src} />
+              <div className="flex gap-2 items-center">
+                <FaCheck className="text-blue-600" />
                 <p>For small teams – 15 users</p>
               </div>
-              <div className="flex gap-2">
-                <img src={CheckICon.src} />
+              <div className="flex gap-2 items-center">
+                <FaCheck className="text-blue-600" />
                 <p>Individual support</p>
               </div>
-              <div className="flex gap-2">
-                <img src={CheckICon.src} />
+              <div className="flex gap-2 items-center">
+                <FaCheck className="text-blue-600" />
                 <p>Individual data – 60GB</p>
               </div>
             </div>
@@ -318,20 +310,20 @@ function Solutions() {
               Get started
             </button>
             <div className="flex flex-col gap-3">
-              <div className="flex gap-2">
-                <img src={CheckICon.src} />
+              <div className="flex gap-2 items-center">
+                <FaCheck className="text-blue-600" />
                 <p>For big teams – unlimited</p>
               </div>
-              <div className="flex gap-2">
-                <img src={CheckICon.src} />
+              <div className="flex gap-2 items-center">
+                <FaCheck className="text-blue-600" />
                 <p>Individual support</p>
               </div>
-              <div className="flex gap-2">
-                <img src={CheckICon.src} />
+              <div className="flex gap-2 items-center">
+                <FaCheck className="text-blue-600" />
                 <p>Individual data – 20GB</p>
               </div>
-              <div className="flex gap-2">
-                <img src={CheckICon.src} />
+              <div className="flex gap-2 items-center">
+                <FaCheck className="text-blue-600" />
                 <p>Data history</p>
               </div>
             </div>
@@ -353,7 +345,7 @@ function Solutions() {
               </h2>
               <p className="flex py-3 gap-1 items-center text-[#185CFF]">
                 Read more
-                <img src={ArrowIcon.src} className="pt-1" />
+                <FaArrowRightLong className="text-blue-600" />
               </p>
             </div>
           </div>
@@ -366,7 +358,7 @@ function Solutions() {
               </h2>
               <p className="flex py-3 gap-1 items-center text-[#185CFF]">
                 Read more
-                <img src={ArrowIcon.src} className="pt-1" />
+                <FaArrowRightLong className="text-blue-600" />
               </p>
             </div>
           </div>
@@ -379,7 +371,7 @@ function Solutions() {
               </h2>
               <p className="flex py-3 gap-1 items-center text-[#185CFF]">
                 Read more
-                <img src={ArrowIcon.src} className="pt-1" />
+                <FaArrowRightLong className="text-blue-600" />
               </p>
             </div>
           </div>
@@ -405,15 +397,15 @@ function Solutions() {
             </p>
             <div className="flex gap-4 flex-col">
               <div className="flex gap-2 items-center">
-                <img src={PhoneIcon.src} alt="Phone" />
-                <h1>ensome@info.co.us</h1>
+                <FaPhoneAlt size={19} className="text-blue-600" />
+                <h1 className="pl-1">ensome@info.co.us</h1>
               </div>
               <div className="flex gap-2 items-center">
-                <img src={EmailIcon.src} alt="Mail" />
+                <MdEmail size={20} className="text-blue-600" />
                 <h1>+1 601-201-5580</h1>
               </div>
               <div className="flex gap-2 items-center">
-                <img src={PinIcon.src} alt="Pin" />
+                <IoMdPin size={20} className="text-blue-600" />
                 <h1>1642 Washington Ave, Jackson, MS</h1>
               </div>
             </div>

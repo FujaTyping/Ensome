@@ -1,14 +1,16 @@
 import React from "react";
 import EnsomeLogo from "@/app/assets/EnsomeLogo.svg";
-import ArrowIcon from "@/app/assets/icons/Arrow_Icon.svg";
-import ArrowGrayIcon from "@/app/assets/icons/ArrowGray.svg";
 
-import BE from "@/app/assets/icons/BE.svg";
-import Facebook from "@/app/assets/icons/Facebook.svg";
-import Twitter from "@/app/assets/icons/Twitter.svg";
-import Youtube from "@/app/assets/icons/Youtube.svg";
-import Linkedin from "@/app/assets/icons/LinkledIn.svg";
-import Dribble from "@/app/assets/icons/Dribble.svg";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaLinkedinIn,
+  FaYoutube,
+  FaDribbble,
+  FaBehance,
+} from "react-icons/fa";
+
+import { FaArrowRightLong } from "react-icons/fa6";
 
 function Footer1() {
   return (
@@ -77,13 +79,13 @@ function Footer1() {
                   href="mailto:ensome@info.co.us"
                   className="flex items-center gap-2 font-bold"
                 >
-                  ensome@info.co.us <img src={ArrowIcon.src} alt="Icon" />
+                  ensome@info.co.us <FaArrowRightLong />
                 </a>
               </div>
               <div>
                 <h2>1642 Washington Avenue, Jackson, MS, 39201</h2>
                 <a href="#" className="flex items-center gap-2 font-bold">
-                  Driving derections <img src={ArrowIcon.src} alt="Icon" />
+                  Driving derections <FaArrowRightLong />
                 </a>
               </div>
             </div>
@@ -91,23 +93,23 @@ function Footer1() {
           <div>
             <h2 className="font-bold text-xl mb-3">Social</h2>
             <div className="flex gap-4">
-              <a href="#">
-                <img src={Facebook.src} alt="FB" />
+              <a href="#" className="bg-blue-600 p-2 rounded-full">
+                <FaFacebookF size={12} className="text-white" />
               </a>
-              <a href="#">
-                <img src={Twitter.src} alt="X" />
+              <a href="#" className="bg-blue-600 p-2 rounded-full">
+                <FaTwitter size={12} className="text-white" />
               </a>
-              <a href="#">
-                <img src={Linkedin.src} alt="LI" />
+              <a href="#" className="bg-blue-600 p-2 rounded-full">
+                <FaLinkedinIn size={12} className="text-white" />
               </a>
-              <a href="#">
-                <img src={Youtube.src} alt="YT" />
+              <a href="#" className="bg-blue-600 p-2 rounded-full">
+                <FaYoutube size={12} className="text-white" />
               </a>
-              <a href="#">
-                <img src={Dribble.src} alt="DB" />
+              <a href="#" className="bg-blue-600 p-2 rounded-full">
+                <FaDribbble size={12} className="text-white" />
               </a>
-              <a href="#">
-                <img src={BE.src} alt="BE" />
+              <a href="#" className="bg-blue-600 p-2 rounded-full">
+                <FaBehance size={12} className="text-white" />
               </a>
             </div>
           </div>
@@ -116,10 +118,10 @@ function Footer1() {
         <div className="flex items-start w-full place-content-between py-12 px-32">
           <div className="flex gap-5 text-gray-400">
             <a href="#" className="flex items-center gap-2 font-bold">
-              Privacy policy <img src={ArrowGrayIcon.src} alt="Icon" />
+              Privacy policy <FaArrowRightLong className="text-gray-400" />
             </a>
             <a href="#" className="flex items-center gap-2 font-bold">
-              Terms of us <img src={ArrowGrayIcon.src} alt="Icon" />
+              Terms of us <FaArrowRightLong className="text-gray-400" />
             </a>
           </div>
           <div>

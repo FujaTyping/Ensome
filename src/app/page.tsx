@@ -13,16 +13,14 @@ import ClientLogo4 from "./assets/ClientLogo/logo_4.svg";
 import ClientLogo5 from "./assets/ClientLogo/logo_5.svg";
 import ClientLogo6 from "./assets/ClientLogo/logo_6.svg";
 
-import icon_brain from "./assets/clientpageicon/01_icon_brain_circuit.svg";
-import icon_arrow from "./assets/clientpageicon/02_icon_arrow_trending_lines.svg";
-import icon_key from "./assets/clientpageicon/03_icon_key.svg";
-import ArrowActive from "@/app/assets/icons/ArrowActive.svg";
-import ArrowInactive from "@/app/assets/icons/ArrowInActive.svg";
-
 import Person1 from "@/app/assets/Avatar/001_img_person_1.svg";
 import Person2 from "@/app/assets/Avatar/002_img_person_2.svg";
 
-import PlayG from "@/app/assets/icons/PlayGray.svg";
+import { FaRegCirclePlay } from "react-icons/fa6";
+import { LuBrainCircuit } from "react-icons/lu";
+import { BsGraphUpArrow } from "react-icons/bs";
+import { FaKey } from "react-icons/fa";
+import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
 
 export default function Home() {
   return (
@@ -45,7 +43,7 @@ export default function Home() {
                 Learn more
               </button>
               <button className="flex gap-2 items-center cursor-pointer rounded-lg text-blac py-2 px-3">
-                <img src={PlayG.src} width={24} height={24} />
+                <FaRegCirclePlay size={24} />
                 Watch The demo
               </button>
             </div>
@@ -75,7 +73,7 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl">
             <div className="bg-white p-8 rounded-md">
-              <img src={icon_brain.src} />
+              <LuBrainCircuit size={42} className="text-blue-600" />
               <div>
                 <h2 className="text-2xl font-bold pt-6">Machine Learning</h2>
                 <p className="text-gray-400 mt-2">
@@ -87,7 +85,7 @@ export default function Home() {
             </div>
 
             <div className="bg-white p-8 rounded-md">
-              <img src={icon_arrow.src} />
+              <BsGraphUpArrow size={42} className="text-blue-600" />
               <div>
                 <h2 className="text-2xl font-bold pt-6">Embed analytics</h2>
                 <p className="text-gray-400 mt-2">
@@ -99,7 +97,7 @@ export default function Home() {
             </div>
 
             <div className="bg-white p-8 rounded-md">
-              <img src={icon_key.src} />
+              <FaKey size={42} className="text-blue-600" />
               <div>
                 <h2 className="text-2xl font-bold pt-6">Access control</h2>
                 <p className="text-gray-400 mt-2">
@@ -217,10 +215,10 @@ export default function Home() {
           </h1>
           <div className="flex gap-4">
             <button className="p-5 w-20 bg-blue-100 rounded-full flex items-center justify-center">
-              <img src={ArrowInactive.src} alt="Icon" />
+              <FaArrowLeftLong className="text-gray-400" />
             </button>
             <button className="p-5 w-20 bg-blue-100 rounded-full flex items-center justify-center cursor-pointer">
-              <img src={ArrowActive.src} alt="Icon" />
+              <FaArrowRightLong />
             </button>
           </div>
         </div>

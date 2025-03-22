@@ -1,12 +1,14 @@
 import React from "react";
 import EnsomeLogo from "../assets/EnsomeLogoWihte.svg";
 
-import BE from "@/app/assets/icons/White/BE.svg";
-import Facebook from "@/app/assets/icons/White/Facebook.svg";
-import Twitter from "@/app/assets/icons/White/Twitter.svg";
-import Youtube from "@/app/assets/icons/White/Youtube.svg";
-import Linkedin from "@/app/assets/icons/White/LinkedIn.svg";
-import Dribble from "@/app/assets/icons/White/Dribble.svg";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaLinkedinIn,
+  FaYoutube,
+  FaDribbble,
+  FaBehance,
+} from "react-icons/fa";
 
 function Footer2() {
   return (
@@ -39,23 +41,23 @@ function Footer2() {
               corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.
             </p>
             <div className="flex gap-4">
-              <a href="#">
-                <img src={Facebook.src} alt="FB" />
+              <a href="#" className="bg-white p-2 rounded-full">
+                <FaFacebookF size={12} className="text-[#002B4E]" />
               </a>
-              <a href="#">
-                <img src={Twitter.src} alt="X" />
+              <a href="#" className="bg-white p-2 rounded-full">
+                <FaTwitter size={12} className="text-[#002B4E]" />
               </a>
-              <a href="#">
-                <img src={Linkedin.src} alt="LI" />
+              <a href="#" className="bg-white p-2 rounded-full">
+                <FaLinkedinIn size={12} className="text-[#002B4E]" />
               </a>
-              <a href="#">
-                <img src={Youtube.src} alt="YT" />
+              <a href="#" className="bg-white p-2 rounded-full">
+                <FaYoutube size={12} className="text-[#002B4E]" />
               </a>
-              <a href="#">
-                <img src={Dribble.src} alt="DB" />
+              <a href="#" className="bg-white p-2 rounded-full">
+                <FaDribbble size={12} className="text-[#002B4E]" />
               </a>
-              <a href="#">
-                <img src={BE.src} alt="BE" />
+              <a href="#" className="bg-white p-2 rounded-full">
+                <FaBehance size={12} className="text-[#002B4E]" />
               </a>
             </div>
           </div>

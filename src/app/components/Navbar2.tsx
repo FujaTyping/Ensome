@@ -1,7 +1,7 @@
 import React from "react";
 
 import EnsomeLogo from "../assets/EnsomeLogoWihte.svg";
-import PlayIcon from "../assets/icons/Play_Icon_Black.svg";
+import { FaRegCirclePlay } from "react-icons/fa6";
 import Link from "next/link";
 
 function Navbar2() {
@@ -22,7 +22,7 @@ function Navbar2() {
         </Link>
       </div>
       <button className="flex gap-2 items-center font-light bg-white cursor-pointer rounded-lg text-black py-2 px-3">
-        <img src={PlayIcon.src} width={24} height={24} />
+        <FaRegCirclePlay className="text-black" size={24} />
         Watch The demo
       </button>
     </div>

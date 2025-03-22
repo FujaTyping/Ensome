@@ -3,8 +3,6 @@ import React from "react";
 import Navbar1 from "../components/Navbar1";
 import Footer2 from "../components/Footer2";
 
-import CheckICon from "@/app/assets/icons/Check.svg";
-
 import peopleWorking1 from "../assets/peopleWorking2/img_1.svg";
 import peopleWorking2 from "../assets/peopleWorking2/img_2.svg";
 import peopleWorking3 from "../assets/peopleWorking2/img_3.svg";
@@ -13,20 +11,10 @@ import Person1 from "../assets/Avatar/001_img_person_1.svg";
 import Person2 from "../assets/Avatar/002_img_person_2.svg";
 import Person3 from "../assets/Avatar/003_img_person_3.svg";
 
-import ArrowIcon from "../assets/icons/Arrow_Icon_Blue.svg";
-import ArrowActive from "@/app/assets/icons/ArrowActive.svg";
-import ArrowInactive from "@/app/assets/icons/ArrowInActive.svg";
-
 import LearnMoreButton from "../assets/LearnMoreButton.svg";
-import WCheck from "@/app/assets/icons/White/CheckW.svg";
 
 import PeopleMeeting from "../assets/PeopleMeeting.svg";
 import PeopleMeeting2 from "../assets/PeopleMeeting2.svg";
-
-import icon_brain from "../assets/clientpageicon/01_icon_brain_circuit.svg";
-import icon_arrow from "../assets/clientpageicon/02_icon_arrow_trending_lines.svg";
-import icon_key from "../assets/clientpageicon/03_icon_key.svg";
-import icon_graph from "../assets/clientpageicon/04_graph.svg";
 
 import ClientLogo1 from "../assets/ClientLogo/logo_1.svg";
 import ClientLogo2 from "../assets/ClientLogo/logo_2.svg";
@@ -34,6 +22,13 @@ import ClientLogo3 from "../assets/ClientLogo/logo_3.svg";
 import ClientLogo4 from "../assets/ClientLogo/logo_4.svg";
 import ClientLogo5 from "../assets/ClientLogo/logo_5.svg";
 import ClientLogo6 from "../assets/ClientLogo/logo_6.svg";
+
+import { LuBrainCircuit } from "react-icons/lu";
+import { BsGraphUpArrow } from "react-icons/bs";
+import { FaKey, FaCheck } from "react-icons/fa";
+import { MdAutoGraph } from "react-icons/md";
+
+import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
 
 function Elements() {
   return (
@@ -110,11 +105,15 @@ function Elements() {
           <div className="grid grid-cols-3 gap-16">
             <div className="flex flex-col items-center justify-center gap-1">
               <p className="text-4xl font-bold text-[#185CFF]">1830+</p>
-              <p className="text-gray-400 text-sm w-[200px]">Projects executed</p>
+              <p className="text-gray-400 text-sm w-[200px]">
+                Projects executed
+              </p>
             </div>
             <div className="flex flex-col items-center justify-center gap-1">
               <p className="text-4xl font-bold text-[#185CFF]">834+</p>
-              <p className="text-gray-400 text-sm w-[200px]">Satisfied customers</p>
+              <p className="text-gray-400 text-sm w-[200px]">
+                Satisfied customers
+              </p>
             </div>
             <div className="flex flex-col items-center justify-center gap-1">
               <p className="text-4xl font-bold text-[#185CFF]">390</p>
@@ -151,7 +150,7 @@ function Elements() {
           <div className="flex flex-row gap-5">
             <div className="flex flex-col gap-4">
               <div className="bg-white p-6 shadow-md rounded-md flex flex-col gap-4">
-                <img src={icon_brain.src} className="w-12" alt="Icon" />
+                <LuBrainCircuit size={42} className="text-blue-600" />
                 <h1 className="text-2xl font-bold">Machine learning</h1>
                 <p className="text-gray-400 max-w-[220px]">
                   At vero eos et accusamus et iusto odio dignissimos duciu quili
@@ -159,7 +158,7 @@ function Elements() {
                 </p>
               </div>
               <div className="bg-white p-6 shadow-md rounded-md flex flex-col gap-4">
-                <img src={icon_key.src} className="w-12" alt="Icon" />
+                <FaKey size={42} className="text-blue-600" />
                 <h1 className="text-2xl font-bold">Access control</h1>
                 <p className="text-gray-400 max-w-[220px]">
                   At vero eos et accusamus et iusto odio dignissimos duciu quili
@@ -169,17 +168,19 @@ function Elements() {
             </div>
             <div className="flex flex-col gap-4">
               <div className="bg-white p-6 shadow-md rounded-md flex flex-col gap-4">
-                <img src={icon_arrow.src} className="w-12" alt="Icon" />
+                <BsGraphUpArrow size={42} className="text-blue-600" />
                 <h1 className="text-2xl font-bold">Embed analytics</h1>
                 <p className="text-gray-400 max-w-[220px]">
-                At vero eos et accusamus et iusto odio dignissimos duciu quili blandit praesentium voluptatum ipsa quae ab illo.
+                  At vero eos et accusamus et iusto odio dignissimos duciu quili
+                  blandit praesentium voluptatum ipsa quae ab illo.
                 </p>
               </div>
               <div className="bg-white p-6 shadow-md rounded-md flex flex-col gap-4">
-                <img src={icon_graph.src} className="w-12" alt="Icon" />
+                <MdAutoGraph size={42} className="text-blue-600" />
                 <h1 className="text-2xl font-bold">Data analytics</h1>
                 <p className="text-gray-400 max-w-[220px]">
-                At vero eos et accusamus et iusto odio dignissimos duciu quili blandit praesentium voluptatum ipsa quae ab illo.
+                  At vero eos et accusamus et iusto odio dignissimos duciu quili
+                  blandit praesentium voluptatum ipsa quae ab illo.
                 </p>
               </div>
             </div>
@@ -193,10 +194,10 @@ function Elements() {
           </div>
           <div className="flex gap-4">
             <button className="p-5 w-20 bg-blue-100 rounded-full flex items-center justify-center">
-              <img src={ArrowInactive.src} alt="Icon" />
+              <FaArrowLeftLong className="text-gray-400" />
             </button>
             <button className="p-5 w-20 bg-blue-100 rounded-full flex items-center justify-center">
-              <img src={ArrowActive.src} alt="Icon" />
+              <FaArrowRightLong />
             </button>
           </div>
         </div>
@@ -274,12 +275,12 @@ function Elements() {
               Choose plan
             </button>
             <div className="flex flex-col gap-3">
-              <div className="flex gap-2">
-                <img src={CheckICon.src} />
+              <div className="flex gap-2 items-center">
+                <FaCheck className="text-blue-600" />
                 <p>For small teams – 5 users</p>
               </div>
-              <div className="flex gap-2">
-                <img src={CheckICon.src} />
+              <div className="flex gap-2 items-center">
+                <FaCheck className="text-blue-600" />
                 <p>Community support</p>
               </div>
             </div>
@@ -303,16 +304,16 @@ function Elements() {
               Choose plan
             </button>
             <div className="flex flex-col gap-3">
-              <div className="flex gap-2">
-                <img src={CheckICon.src} />
+              <div className="flex gap-2 items-center">
+                <FaCheck className="text-blue-600" />
                 <p>For small teams – 15 users</p>
               </div>
-              <div className="flex gap-2">
-                <img src={CheckICon.src} />
+              <div className="flex gap-2 items-center">
+                <FaCheck className="text-blue-600" />
                 <p>Individual support</p>
               </div>
-              <div className="flex gap-2">
-                <img src={CheckICon.src} />
+              <div className="flex gap-2 items-center">
+                <FaCheck className="text-blue-600" />
                 <p>Individual data – 60GB</p>
               </div>
             </div>
@@ -336,16 +337,16 @@ function Elements() {
               Choose plan
             </button>
             <div className="flex flex-col gap-3">
-              <div className="flex gap-2">
-                <img src={WCheck.src} />
+              <div className="flex gap-2 items-center">
+                <FaCheck className="text-white" />
                 <p>For big teams – 30 users</p>
               </div>
-              <div className="flex gap-2">
-                <img src={WCheck.src} />
+              <div className="flex gap-2 items-center">
+                <FaCheck className="text-white" />
                 <p>Individual support</p>
               </div>
-              <div className="flex gap-2">
-                <img src={WCheck.src} />
+              <div className="flex gap-2 items-center">
+                <FaCheck className="text-white" />
                 <p>Advanced permissions</p>
               </div>
             </div>
@@ -369,32 +370,32 @@ function Elements() {
               Choose plan
             </button>
             <div className="flex flex-col gap-3">
-              <div className="flex gap-2">
-                <img src={CheckICon.src} />
+              <div className="flex gap-2 items-center">
+                <FaCheck className="text-blue-600" />
                 <p>Unlimited team members</p>
               </div>
-              <div className="flex gap-2">
-                <img src={CheckICon.src} />
+              <div className="flex gap-2 items-center">
+                <FaCheck className="text-blue-600" />
                 <p>Individual support</p>
               </div>
-              <div className="flex gap-2">
-                <img src={CheckICon.src} />
+              <div className="flex gap-2 items-center">
+                <FaCheck className="text-blue-600" />
                 <p>Unlimited Individual data</p>
               </div>
-              <div className="flex gap-2">
-                <img src={CheckICon.src} />
+              <div className="flex gap-2 items-center">
+                <FaCheck className="text-blue-600" />
                 <p>Advanced permissions</p>
               </div>
-              <div className="flex gap-2">
-                <img src={CheckICon.src} />
+              <div className="flex gap-2 items-center">
+                <FaCheck className="text-blue-600" />
                 <p>Data history</p>
               </div>
-              <div className="flex gap-2">
-                <img src={CheckICon.src} />
+              <div className="flex gap-2 items-center">
+                <FaCheck className="text-blue-600" />
                 <p>Audit log</p>
               </div>
-              <div className="flex gap-2">
-                <img src={CheckICon.src} />
+              <div className="flex gap-2 items-center">
+                <FaCheck className="text-blue-600" />
                 <p>All functions included</p>
               </div>
             </div>
@@ -408,10 +409,10 @@ function Elements() {
           </div>
           <div className="flex gap-4">
             <button className="p-5 w-20 bg-blue-100 rounded-full flex items-center justify-center">
-              <img src={ArrowInactive.src} alt="Icon" />
+              <FaArrowLeftLong className="text-gray-400" />
             </button>
             <button className="p-5 w-20 bg-blue-100 rounded-full flex items-center justify-center">
-              <img src={ArrowActive.src} alt="Icon" />
+              <FaArrowRightLong />
             </button>
           </div>
         </div>
@@ -430,7 +431,7 @@ function Elements() {
               </p>
               <p className="flex py-3 gap-1 items-center text-[#185CFF]">
                 Read more
-                <img src={ArrowIcon.src} className="pt-1" />
+                <FaArrowRightLong className="text-[#185CFF] ml-1" />
               </p>
             </div>
           </div>
@@ -448,7 +449,7 @@ function Elements() {
               </p>
               <p className="flex py-3 gap-1 items-center text-[#185CFF]">
                 Read more
-                <img src={ArrowIcon.src} className="pt-1" />
+                <FaArrowRightLong className="text-[#185CFF] ml-1" />
               </p>
             </div>
           </div>
@@ -466,7 +467,7 @@ function Elements() {
               </p>
               <p className="flex py-3 gap-1 items-center text-[#185CFF]">
                 Read more
-                <img src={ArrowIcon.src} className="pt-1" />
+                <FaArrowRightLong className="text-[#185CFF] ml-1" />
               </p>
             </div>
           </div>
