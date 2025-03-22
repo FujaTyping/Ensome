@@ -48,7 +48,7 @@ function Elements() {
               dicta sunt explicabo.
             </p>
             <div className="flex flex-col absolute gap-6 items-center mt-[150px]">
-              <img src={LearnMoreButton.src} />
+              <img src={LearnMoreButton.src} className="cursor-pointer" />
             </div>
           </div>
         </div>
@@ -201,7 +201,7 @@ function Elements() {
             </button>
             <button
               aria-label="right"
-              className="p-5 w-20 bg-blue-100 rounded-full flex items-center justify-center"
+              className="p-5 w-20 bg-blue-100 rounded-full cursor-pointer flex items-center justify-center"
             >
               <FaArrowRightLong />
             </button>
@@ -277,7 +277,7 @@ function Elements() {
                 </div>
               </div>
             </div>
-            <button className="rounded-lg bg-blue-600 py-3 w-full text-white text-sm my-5">
+            <button className="rounded-lg bg-blue-600 py-3 w-full text-white text-sm my-5 cursor-pointer">
               Choose plan
             </button>
             <div className="flex flex-col gap-3">
@@ -306,7 +306,7 @@ function Elements() {
                 </div>
               </div>
             </div>
-            <button className="rounded-lg bg-blue-600 py-3 w-full text-white text-sm my-5">
+            <button className="rounded-lg bg-blue-600 py-3 w-full text-white text-sm my-5 cursor-pointer">
               Choose plan
             </button>
             <div className="flex flex-col gap-3">
@@ -339,7 +339,7 @@ function Elements() {
                 </div>
               </div>
             </div>
-            <button className="rounded-lg bg-white py-3 w-full text-blue-600 text-sm my-5">
+            <button className="rounded-lg bg-white py-3 w-full text-blue-600 text-sm my-5 cursor-pointer">
               Choose plan
             </button>
             <div className="flex flex-col gap-3">
@@ -372,7 +372,7 @@ function Elements() {
                 </div>
               </div>
             </div>
-            <button className="rounded-lg bg-blue-600 py-3 w-full text-white text-sm my-5">
+            <button className="rounded-lg bg-blue-600 py-3 w-full text-white text-sm my-5 cursor-pointer">
               Choose plan
             </button>
             <div className="flex flex-col gap-3">
@@ -422,7 +422,7 @@ function Elements() {
             </button>
             <button
               aria-label="right"
-              className="p-5 w-20 bg-blue-100 rounded-full flex items-center justify-center"
+              className="p-5 w-20 bg-blue-100 rounded-full flex cursor-pointer items-center justify-center"
             >
               <FaArrowRightLong />
             </button>
@@ -441,7 +441,7 @@ function Elements() {
                 blanditiis praesentium voluptatum deleniti atque corrupti quos
                 dolores et quas. Quis autem vel eum iure...
               </p>
-              <p className="flex py-3 gap-1 items-center text-[#185CFF]">
+              <p className="flex py-3 gap-1 cursor-pointer items-center text-[#185CFF]">
                 Read more
                 <FaArrowRightLong className="text-[#185CFF] ml-1" />
               </p>
@@ -459,7 +459,7 @@ function Elements() {
                 blanditiis praesentium voluptatum deleniti atque corrupti quos
                 dolores et quas. Quis autem vel eum iure...
               </p>
-              <p className="flex py-3 gap-1 items-center text-[#185CFF]">
+              <p className="flex py-3 gap-1 cursor-pointer items-center text-[#185CFF]">
                 Read more
                 <FaArrowRightLong className="text-[#185CFF] ml-1" />
               </p>
@@ -477,7 +477,7 @@ function Elements() {
                 blanditiis praesentium voluptatum deleniti atque corrupti quos
                 dolores et quas. Quis autem vel eum iure...
               </p>
-              <p className="flex py-3 gap-1 items-center text-[#185CFF]">
+              <p className="flex py-3 gap-1 cursor-pointer items-center text-[#185CFF]">
                 Read more
                 <FaArrowRightLong className="text-[#185CFF] ml-1" />
               </p>
@@ -491,7 +491,7 @@ function Elements() {
           Ut enim ad minima veniam, quis nostrum exercitationem ullam
           corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.
         </p>
-        <button className="rounded-lg bg-blue-600 py-4 px-12 text-white text-sm">
+        <button className="rounded-lg bg-blue-600 cursor-pointer py-4 px-12 text-white text-sm">
           Learn more
         </button>
       </div>

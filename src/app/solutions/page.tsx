@@ -49,7 +49,7 @@ function Solutions() {
               <button className="gap-2 items-center bg-white cursor-pointer rounded-lg text-black py-2 px-3">
                 Learn more
               </button>
-              <button className="flex text-white gap-2">
+              <button className="flex text-white cursor-pointer gap-2">
                 <FaRegCirclePlay className="text-white" size={24} />
                 Watch the demo
               </button>
@@ -72,7 +72,7 @@ function Solutions() {
               quae ab illo inventore veritatis et quasi architecto beatae vitae
               dicta sunt explicabo.
             </p>
-            <button className="rounded-lg bg-blue-600 py-3 px-4 text-white text-sm w-32">
+            <button className="rounded-lg bg-blue-600 cursor-pointer py-3 px-4 text-white text-sm w-32">
               Learn more
             </button>
           </div>
@@ -93,7 +93,7 @@ function Solutions() {
               quae ab illo inventore veritatis et quasi architecto beatae vitae
               dicta sunt explicabo.
             </p>
-            <button className="rounded-lg bg-blue-600 py-3 px-4 text-white text-sm w-32">
+            <button className="rounded-lg bg-blue-600 cursor-pointer py-3 px-4 text-white text-sm w-32">
               Learn more
             </button>
           </div>
@@ -189,7 +189,7 @@ function Solutions() {
               <button className="p-5 w-20 bg-blue-100 rounded-full flex items-center justify-center">
                 <FaArrowLeftLong aria-label="left" className="text-gray-400" />
               </button>
-              <button className="p-5 w-20 bg-blue-100 rounded-full flex items-center justify-center">
+              <button className="p-5 w-20 bg-blue-100 cursor-pointer rounded-full flex items-center justify-center">
                 <FaArrowRightLong aria-label="right" />
               </button>
             </div>
@@ -240,7 +240,7 @@ function Solutions() {
             <button className="p-3 px-6 bg-blue-500 text-white rounded-full flex items-center justify-center">
               Monthly
             </button>
-            <button className="p-3 w-20 bg-blue-100 rounded-full flex items-center justify-center">
+            <button className="p-3 w-20 bg-blue-100 cursor-pointer rounded-full flex items-center justify-center">
               Yearly
             </button>
           </div>
@@ -252,7 +252,7 @@ function Solutions() {
               <h1 className="font-bold text-4xl">Free</h1>
               <h2 className="font-bold text-xl">Trial plan for starters</h2>
             </div>
-            <button className="rounded-lg text-blue-600 py-3 w-full border border-blue-600 text-sm my-5">
+            <button className="rounded-lg text-blue-600 cursor-pointer py-3 w-full border border-blue-600 text-sm my-5">
               Get started
             </button>
             <div className="flex flex-col gap-3">
@@ -279,7 +279,7 @@ function Solutions() {
               </div>
               <h2 className="font-bold text-xl">For users who want more</h2>
             </div>
-            <button className="rounded-lg text-white py-3 w-full bg-blue-600 text-sm my-5">
+            <button className="rounded-lg text-white cursor-pointer py-3 w-full bg-blue-600 text-sm my-5">
               Get started
             </button>
             <div className="flex flex-col gap-3">
@@ -306,7 +306,7 @@ function Solutions() {
               </div>
               <h2 className="font-bold text-xl">The best solution for Pro</h2>
             </div>
-            <button className="rounded-lg text-white py-3 w-full bg-blue-600 text-sm my-5">
+            <button className="rounded-lg text-white cursor-pointer py-3 w-full bg-blue-600 text-sm my-5">
               Get started
             </button>
             <div className="flex flex-col gap-3">
@@ -343,7 +343,7 @@ function Solutions() {
               <h2 className="text-2xl font-bold">
                 Staffing software: key capabilities and top products
               </h2>
-              <p className="flex py-3 gap-1 items-center text-[#185CFF]">
+              <p className="flex py-3 cursor-pointer gap-1 items-center text-[#185CFF]">
                 Read more
                 <FaArrowRightLong className="text-blue-600" />
               </p>
@@ -356,7 +356,7 @@ function Solutions() {
               <h2 className="text-2xl font-bold">
                 2022 software development trends explained with benefits
               </h2>
-              <p className="flex py-3 gap-1 items-center text-[#185CFF]">
+              <p className="flex py-3 cursor-pointer gap-1 items-center text-[#185CFF]">
                 Read more
                 <FaArrowRightLong className="text-blue-600" />
               </p>
@@ -369,7 +369,7 @@ function Solutions() {
               <h2 className="text-2xl font-bold">
                 Business analysis helps you in finance
               </h2>
-              <p className="flex py-3 gap-1 items-center text-[#185CFF]">
+              <p className="flex py-3 cursor-pointer gap-1 items-center text-[#185CFF]">
                 Read more
                 <FaArrowRightLong className="text-blue-600" />
               </p>
@@ -446,7 +446,7 @@ function Solutions() {
               />
             </div>
             <div className="flex justify-end mt-8">
-              <button className="bg-blue-600 px-10 py-3 text-white rounded-md text-sm text-center">
+              <button className="bg-blue-600 cursor-pointer px-10 py-3 text-white rounded-md text-sm text-center">
                 Send
               </button>
             </div>

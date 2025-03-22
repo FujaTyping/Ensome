@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Manrope, Open_Sans } from "next/font/google";
 import "./globals.css";
+import ToTop from "./components/ToTop";
 
 const manrope = Manrope({
   variable: "--font-manrope",
@@ -26,6 +27,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${manrope.variable} ${openSans.variable} antialiased`}>
         {children}
+        <ToTop />
       </body>
     </html>
   );

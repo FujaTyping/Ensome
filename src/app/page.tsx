@@ -54,13 +54,21 @@ export default function Home() {
             alt="Main1"
           />
         </div>
-        <div className="flex flex-col md:flex-row justify-center items-center border-t-1 border-gray-500/10 gap-4">
-          <img src={ClientLogo1.src} width={150} alt="Client1 Logo" />
-          <img src={ClientLogo2.src} width={150} alt="Client2 Logo" />
-          <img src={ClientLogo3.src} width={150} alt="Client3 Logo" />
-          <img src={ClientLogo4.src} width={150} alt="Client4 Logo" />
-          <img src={ClientLogo5.src} width={150} alt="Client5 Logo" />
-          <img src={ClientLogo6.src} width={150} alt="Client6 Logo" />
+        <div className="overflow-hidden border-t border-gray-500/10">
+          <div className="flex items-center justify-center gap-4 animate-marquee">
+            <img src={ClientLogo1.src} width={150} alt="Client1 Logo" />
+            <img src={ClientLogo2.src} width={150} alt="Client2 Logo" />
+            <img src={ClientLogo3.src} width={150} alt="Client3 Logo" />
+            <img src={ClientLogo4.src} width={150} alt="Client4 Logo" />
+            <img src={ClientLogo5.src} width={150} alt="Client5 Logo" />
+            <img src={ClientLogo6.src} width={150} alt="Client6 Logo" />
+            <img src={ClientLogo1.src} width={150} alt="Client1 Logo" />
+            <img src={ClientLogo2.src} width={150} alt="Client2 Logo" />
+            <img src={ClientLogo3.src} width={150} alt="Client3 Logo" />
+            <img src={ClientLogo4.src} width={150} alt="Client4 Logo" />
+            <img src={ClientLogo5.src} width={150} alt="Client5 Logo" />
+            <img src={ClientLogo6.src} width={150} alt="Client6 Logo" />
+          </div>
         </div>
       </section>
       <section>
